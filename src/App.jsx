@@ -1,8 +1,7 @@
-
+import * as pdfFonts from "pdfmake/build/vfs_fonts"
 import './App.css'
-
 import pdfMake from "pdfmake/build/pdfmake"
-import pdfFonts from "pdfmake/build/vfs_fonts"
+
 import { data} from './data'
 import { Impressao } from './impressao'
  pdfMake.vfs = pdfFonts.pdfMake.vfs
