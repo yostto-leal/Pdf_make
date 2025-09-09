@@ -1,12 +1,19 @@
-import * as pdfFonts from "pdfmake/build/vfs_fonts"
+import React from 'react'
 import './App.css'
-import pdfMake from "pdfmake/build/pdfmake"
 
-import { data} from './data'
+// PDFMake e fontes
+import pdfMake from 'pdfmake/build/pdfmake'
+import * as pdfFonts from 'pdfmake/build/vfs_fonts'
+
+// Dados e lógica de impressão
+import { data } from './data'
 import { Impressao } from './impressao'
- pdfMake.vfs = pdfFonts.pdfMake.vfs
 
- 
+
+// Registro das fontes
+pdfMake.vfs = pdfFonts.pdfMake.vfs
+
+
 function App() {
 
   const visualizarImpressao = async () => {
